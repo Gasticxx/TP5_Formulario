@@ -8,7 +8,7 @@ const fields = [
 { id: 'nombre', label: 'Nombre' },
 { id: 'apellido', label: 'Apellido' },
 { id: 'email', label: 'Email' },
-{ id: 'date', label: 'Fecha de nacimiento' },
+{ id: 'fecha', label: 'Fecha de nacimiento' },
 { id: 'password', label: 'Contraseña' },
 { id: 'confirmPassword', label: 'Confirmar contraseña' }
 ];
@@ -75,7 +75,7 @@ function validateField(id) {
                     message = 'Ingrese un email válido.';
                 }
                 break;
-            case 'date': {
+            case 'fecha': {
                 // guarda el valor que ingreso el usuario
                 const fechNacimiento = new Date(value);
                 // guardara la fecha actualizada para realizar la resta
